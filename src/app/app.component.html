@@ -1,0 +1,11 @@
+<div class="app-container">
+  <div class="counter-container">
+    <h1 class="counter-heading" [ngClass]="{'red-color':counter<0,'green-color':counter>0,'black-color':counter===0}">
+      {{counter}}</h1>
+    <div class="button-container">
+      <button class="btn" (click)="increamentCounter()">Increament</button>
+      <button class="btn" (click)="resetCounter()">Reset</button>
+      <button class="btn" (click)="decreamentCounter()">Decreament</button>
+    </div>
+  </div>
+</div>
